@@ -1,4 +1,4 @@
-# 🏦 Bank Market Capitalization ETL Pipeline
+# Bank Market Capitalization ETL Pipeline
 
 A comprehensive ETL (Extract, Transform, Load) pipeline that extracts data about the world's top 10 largest banks by market capitalization, transforms currency values, and loads the results into multiple formats.
 
@@ -13,7 +13,7 @@ This project demonstrates core data engineering skills by building an automated 
 - **Loads** processed data to both CSV and SQLite database
 - **Logs** all pipeline operations with timestamps
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
@@ -31,7 +31,7 @@ This project demonstrates core data engineering skills by building an automated 
                                                └─────────────────┘
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 DataEngineeringProject/
@@ -44,7 +44,7 @@ DataEngineeringProject/
 └── README.md              # Project documentation
 ```
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **Python 3.x** - Core programming language
 - **pandas** - Data manipulation and analysis
@@ -53,7 +53,7 @@ DataEngineeringProject/
 - **SQLite3** - Database storage
 - **datetime** - Timestamp logging
 
-## ⚙️ Installation
+##  Installation
 
 1. **Clone the repository**
 ```bash
@@ -74,7 +74,7 @@ venv\Scripts\activate     # On Windows
 pip install requests beautifulsoup4 pandas
 ```
 
-## 🚀 Usage
+##  Usage
 
 Run the ETL pipeline:
 ```bash
@@ -82,7 +82,7 @@ source venv/bin/activate
 python banks_project.py
 ```
 
-## 📊 Pipeline Functions
+##  Pipeline Functions
 
 | Function | Description |
 |----------|-------------|
@@ -93,7 +93,7 @@ python banks_project.py
 | `load_to_db(df, sql_connection, table_name)` | Loads DataFrame to SQLite database |
 | `run_query(query_statement, sql_connection)` | Executes and displays SQL query results |
 
-## 📈 Output Schema
+##  Output Schema
 
 | Column | Description |
 |--------|-------------|
@@ -103,7 +103,7 @@ python banks_project.py
 | `MC_EUR_Billion` | Market capitalization in EUR (Billions) |
 | `MC_INR_Billion` | Market capitalization in INR (Billions) |
 
-## 📝 Sample Output
+##  Sample Output
 
 ```
                                       Name  MC_USD_Billion  MC_GBP_Billion  MC_EUR_Billion  MC_INR_Billion
@@ -119,7 +119,7 @@ python banks_project.py
 9                            Bank of China          136.81          109.45          127.23        11348.39
 ```
 
-## 📋 Log Output
+##  Log Output
 
 ```
 2026-Feb-04-16:45:21 : Preliminaries complete. Initiating ETL process
@@ -132,7 +132,7 @@ python banks_project.py
 2026-Feb-04-16:45:24 : Server Connection closed
 ```
 
-## 🔍 SQL Queries Executed
+##  SQL Queries Executed
 
 1. **Select all records:**
 ```sql
@@ -149,12 +149,12 @@ SELECT AVG(MC_GBP_Billion) FROM Largest_banks
 SELECT Name FROM Largest_banks LIMIT 5
 ```
 
-## 📚 Data Sources
+##  Data Sources
 
 - **Bank Data:** [Wikipedia - List of largest banks](https://web.archive.org/web/20230908091635/https://en.wikipedia.org/wiki/List_of_largest_banks)
 - **Exchange Rates:** IBM Skills Network dataset
 
-## 🎯 Skills Demonstrated
+##  Skills Demonstrated
 
 - Web Scraping
 - Data Extraction & Transformation
@@ -164,7 +164,7 @@ SELECT Name FROM Largest_banks LIMIT 5
 - Python Best Practices
 - ETL Pipeline Design
 
-## 👤 Author
+##  Author
 
 **Halil Görkem Yiğit**
 
