@@ -4,7 +4,7 @@ A comprehensive ETL (Extract, Transform, Load) pipeline that extracts data about
 
 > **Note:** This project is part of my Data Engineering career development journey.
 
-## 📋 Project Overview
+##  Project Overview
 
 This project demonstrates core data engineering skills by building an automated ETL pipeline that:
 
